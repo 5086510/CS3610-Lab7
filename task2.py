@@ -125,9 +125,9 @@ class PayrollApp:
         wallet_proc = self.available_payment_methods["Wallet"]
 
         # Bridge links (employee type -> payment method)
-        salaried = SalariedEmployee("Alice (Salaried)", 5000.0, bank_proc)
-        hourly = HourlyEmployee("Bob (Hourly)", hourly_rate=25.0, hours_worked=160, payment_processor=cheque_proc)
-        contractor = ContractorEmployee("Charlie (Contractor)", project_fee=8000.0, payment_processor=wallet_proc)
+        salaried = SalariedEmployee("Nemanja (Salaried)", 5000.0, bank_proc)
+        hourly = HourlyEmployee("John (Hourly)", hourly_rate=35.0, hours_worked=160, payment_processor=cheque_proc)
+        contractor = ContractorEmployee("Mack (Contractor)", project_fee=1200.0, payment_processor=wallet_proc)
 
         employees = [salaried, hourly, contractor]
 
